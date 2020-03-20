@@ -1,1 +1,1 @@
-# junit-quickcheck-playground
+# jqwik-playground
