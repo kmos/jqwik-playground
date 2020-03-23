@@ -16,12 +16,7 @@ public class Integer {
   }
 
   public Integer add(Integer integer) {
-
-    if (integer.value() == 1) {
-      return new Integer(integer.value() + 1);
-    }
-
-    return new Integer(4);
+    return new Integer(integer.value()*2);
   }
 
   public int value() {
