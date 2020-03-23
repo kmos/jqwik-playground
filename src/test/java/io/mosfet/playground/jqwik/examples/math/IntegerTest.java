@@ -18,4 +18,10 @@ class IntegerTest {
     Integer aInteger = new Integer(1);
     assertEquals(2,aInteger.add(new Integer(1)).value());
   }
+
+  @Test
+  void twoPlusTwoShouldBeFour() {
+    Integer aInteger = new Integer(2);
+    assertEquals(4, aInteger.add(new Integer(2)).value());
+  }
 }
