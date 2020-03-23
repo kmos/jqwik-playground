@@ -1,9 +1,5 @@
 package io.mosfet.playground.jqwik.examples.math;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Created with love.
  * User: mosfet
