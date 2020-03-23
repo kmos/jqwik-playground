@@ -27,7 +27,7 @@ class IntegerTest {
 
   @Test
   void threePlusThreeShouldBeSix() {
-    Integer ainteger = new Integer(3);
-    assertEquals(6, ainteger.add(new Integer(3)).value());
+    Integer aInteger = new Integer(3);
+    assertEquals(6, aInteger.add(new Integer(3)).value());
   }
 }
