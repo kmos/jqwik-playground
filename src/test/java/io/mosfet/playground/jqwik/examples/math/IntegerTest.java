@@ -30,4 +30,10 @@ class IntegerTest {
     Integer aInteger = new Integer(3);
     assertEquals(6, aInteger.add(new Integer(3)).value());
   }
+
+  @Test
+  void onePlusThreeShouldBeFour() {
+    Integer aInteger = new Integer(1);
+    assertEquals(4, aInteger.add(new Integer(3)).value());
+  }
 }
