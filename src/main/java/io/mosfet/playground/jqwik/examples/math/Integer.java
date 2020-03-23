@@ -13,33 +13,23 @@ import java.util.Map;
  */
 public class Integer {
 
-  private int value;
+  private final int value;
+  public static final int ZERO = 0;
 
-  private static final Map<java.lang.Integer, Integer> myMap;
-  static {
-    Map<java.lang.Integer, Integer> aMap = new HashMap<>();
-    aMap.put(1, new Integer(1));
-    aMap.put(2, new Integer(2));
-    aMap.put(3, new Integer(3));
-    aMap.put(4, new Integer(4));
-    aMap.put(5, new Integer(5));
-    aMap.put(6, new Integer(6));
-    aMap.put(7, new Integer(7));
-    aMap.put(8, new Integer(8));
-    aMap.put(9, new Integer(9));
-    myMap = Collections.unmodifiableMap(aMap);
+  public Integer() {
+    this.value = 0;
   }
-
 
   public Integer(int value) {
     this.value = value;
   }
 
-  public Integer add(Integer integer) {
-    return myMap.get(integer.value() + this.value());
+  public io.mosfet.playground.jqwik.examples.math.Integer add(io.mosfet.playground.jqwik.examples.math.Integer integer) {
+    return new io.mosfet.playground.jqwik.examples.math.Integer(this.value + integer.value());
   }
 
   public int value() {
-    return value;
+    return this.value;
   }
+
 }
