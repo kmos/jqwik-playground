@@ -20,8 +20,8 @@ public class Integer {
     this.value = value;
   }
 
-  public io.mosfet.playground.jqwik.examples.math.Integer add(io.mosfet.playground.jqwik.examples.math.Integer integer) {
-    return new io.mosfet.playground.jqwik.examples.math.Integer(this.value + integer.value());
+  public Integer add(Integer integer) {
+    return new Integer(this.value + integer.value());
   }
 
   public int value() {
