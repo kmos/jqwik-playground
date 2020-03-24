@@ -37,15 +37,4 @@ class IntegerPBTest {
     assertEquals(aInteger.add(new Integer(Integer.ZERO)).value(), aInteger.value());
   }
 
-  /**
-   * Property based on this assumption (not complete):
-   * the square root of a squared value should be equal to the originial value
-   * @param anInt
-   * @return
-   */
-  @Property(shrinking = ShrinkingMode.OFF)
-  boolean rootOfSquareShouldBeOriginalValue(@Positive @ForAll int anInt) {
-    return anInt == new Integer(anInt * anInt).sqrt().value();
-  }
-
 }
