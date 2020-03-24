@@ -24,6 +24,10 @@ public class Integer {
     return new Integer(this.value + integer.value());
   }
 
+  public Integer sqrt() {
+    return new Integer((int) Math.sqrt(value));
+  }
+
   public int value() {
     return this.value;
   }
